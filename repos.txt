@@ -1,0 +1,4 @@
+// use absolute path of projects
+
+// example
+C:\Users\<username>\Documents\work-projects\..\..

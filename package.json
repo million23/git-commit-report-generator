@@ -1,0 +1,24 @@
+{
+  "name": "report-generator",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/react": "^19.2.15"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@clack/prompts": "^1.5.0",
+    "@google/generative-ai": "^0.24.1",
+    "@opentui/core": "^0.3.0",
+    "@opentui/react": "^0.3.0",
+    "@tanstack/ai": "^0.6.1",
+    "@tanstack/ai-anthropic": "^0.6.0",
+    "@tanstack/ai-gemini": "^0.6.0",
+    "@tanstack/ai-openai": "^0.6.0",
+    "react": "^19.2.6"
+  }
+}
