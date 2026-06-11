@@ -16,7 +16,7 @@ import picocolors from "picocolors";
 
 process.stdout.write("\x1Bc");
 
-const API_KEY = process.env.GEMINI_API_KEY;
+const API_KEY = process.env.API_KEY;
 const AI_MODEL = process.env.AI_MODEL || "gemini-1.5-flash"; // Fallback to flash
 const REPO_LIST_FILE = join(import.meta.dir, "repos.txt");
 
@@ -61,7 +61,7 @@ async function generateReport() {
   intro(picocolors.bgCyan(picocolors.black(" Git Weekly Report Generator ")));
 
   if (!API_KEY) {
-    cancel("Missing GEMINI_API_KEY. Please export it in your shell.");
+    cancel("Missing API_KEY. Please export it in your shell.");
     process.exit(1);
   }
 
